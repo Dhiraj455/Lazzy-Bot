@@ -21,6 +21,10 @@
       src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
       data-auto-replace-svg="nest"
     ></script>
+    <link rel="stylesheet" href="./font awesome/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./font awesome/fontawesome-free-5.15.3-web/css/solid.css">
+    <script src="./font awesome/fontawesome-free-5.15.3-web/js/all.js"></script>
+    <script src="./font awesome/fontawesome-free-5.15.3-web/js/solid.js"></script>
   </head>
   <body>
     <nav class="navigation">
@@ -31,8 +35,11 @@
       </div>
       <input type="checkbox" id="click" />
       <label for="click" class="menu">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" id="bars" onclick="showMenu()"></i>
+        <i class="fas fa-times" id="times" onclick="hideMenu()"></i>
       </label>
+      <script src="./index.js"></script>
+      <link rel="stylesheet" href="./style1.css" />
       <ul>
         <li><a href="./index.html" class="head">Home</a></li>
         <li><a href="./about.html" class="head">About</a></li>
