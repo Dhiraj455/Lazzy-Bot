@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: yellow;
+  align-items: center;
+  border-bottom: 1px solid #1b1b1b;
+  border-top: 1px solid #1b1b1b;
+  z-index: 2;
+}
+a{
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  transition: all 0.5s ease;
+}
+nav ul li a {
+  color: #1b44fa;
+  text-decoration: none;
+}
+.head:hover {
+  color: black;
+  text-decoration: underline;
+}
+.lazzy {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  padding: 30px;
+}
+nav ul li {
+  list-style: none;
+  font-family: "Staatliches", cursive;
+  margin: 0px 5px;
+  padding: 25px;
+  font-size: 20px;
+}
+#click {
+  display: none;
+}
+nav .menu i {
+  padding: 0px 50px 0px 100px;
+  cursor: pointer;
+  font-size: 25px;
+  display: none;
+}
+#times {
+  display: none;
+}
+i {
+  display: none;
+}
+@media (max-width: 890px) {
+  nav ul {
+    position: fixed;
+    height: 540px;
+    width: 60%;
+    top: 80px;
+    right: -100%;
+    background: #ebf05b;
+    border-top: 1px solid #1b1b1b;
+    display: block;
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px 0px;
+  }
+  nav .menu #bars {
+    display: block;
+  }
+  #click:checked ~ ul {
+    right: 0%;
+  }
+  /* #times{
+        display: none;
+    } */
+}
+.wel {
+  background-color: #fffd8f;
+  /* background-color: #f7fac5; */
+  height: 60%;
+  width: 100vw;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+h1 {
+  font-family: "Luckiest Guy", cursive;
+  color: #2d90fa;
+  font-size: 50px;
+  font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+p {
+  font-family: "PT Serif", serif;
+  color: #5f6973;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.info {
+  font-weight: normal;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.main{
+  background-color: #f4fabe;
+  height: 200%;
+  border-bottom: 1px solid #1b1b1b;
+}
+.container{
+  display:grid;
+  width: 100vw;
+  grid-gap: 6em;
+  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+}
+.card{
+  background-color: #fbfced;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 3rem 6rem rgba(0, 0,0,0.1);
+  width: 55%;
+  height: 93%;
+  margin-left: 23%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid #1b1b1b;
+}
+@media (max-width:400px) {
+  .card{
+    margin-left: 10%;
+  }
+}
+.card:hover{
+  transform: translateY(-2%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.3);
+}
+.card-head{
+  text-align: center;
+}
+.card-para{
+  text-align: center;
+}
+.card-img{
+  text-align: center;
+}
+.card-img .size{
+  width: 50px;
+  height: 50px;
+}
+.card-btn{
+  text-align: center;  
+}
+.card-btn .activate:hover{
+  text-decoration: underline;
+}
+h3{
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+}
+.activate{
+  color: #fff;
+  background-color: #32373c;
+  border: none;
+  border-radius: 1.55em;
+  box-shadow: none;
+  cursor: pointer;
+  align-items: center;
+  display: inline-block;
+  font-size: 1.125em;
+  padding: .667em 1.333em;
+  text-align: center;
+  overflow-wrap: break-word;
+  text-decoration: none;
+}
+.activate a{
+  text-decoration: none;
+  color: #fff;
+}
+.data{
+  background-image: url(./Images/Minecraft-Pc-Wallpapers-1024x576.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+.section{
+  position: relative;
+  width: 800px;
+  background: #000116;
+  min-height: 550px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  align-items: center;
+}
+.section .box{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.8);
+  clip-path: circle(0% at 0 50%);
+}
+.section .box .img_slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section .box.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 0.5s;
+}
+.detail{
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 10px 20px; */
+  box-sizing: border-box;
+  flex-direction: column;
+  /* position: absolute; */
+}
+.detail .buttons{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.detail button{
+  color: #fff;
+  background-color: #32373c;
+  border: none;
+  border-radius: 1.55em;
+  box-shadow: none;
+  cursor: pointer;
+  align-items: center;
+  display: inline-block;
+  font-size: 1.125em;
+  padding: .667em 1.333em;
+  text-align: center;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  margin: 5px;
+}
+.detail button a{
+  text-decoration: none;
+  color: #fff;
+}
+.detail button:hover{
+  text-decoration: underline;
+}
+h2{
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: bolder; 
+}
+.navi{
+  height: 500px;
+  display: flex;
+  /* width: 50px; */
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.prev-btn , .next-btn{
+  z-index: 999; 
+  font-size: 2rem; 
+  color: #222;
+  background: rgba(255,255,255,0.8);
+  padding: 10px;
+  cursor: pointer;
+  /* opacity: 0; */
+}
+.prev-btn{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.next-btn{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.box:hover,.navi:hover{
+  opacity: 1;
+} 
+.navi-visibility{
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+.navi-visibility .slide-icon{
+  z-index: 999;
+  background: #fff;
+  width: 20px;
+  height: 10px;
+  transform: translateY(-70px);
+  margin: 0 6px;
+  /* margin-bottom: 70px; */
+  border-radius: 3px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+}
+.navi-visibility .slide-icon.active{
+  background: #1b44fa;
+}
+@media (max-width:890px) {
+  .section{
+    width: 100%;
+    margin: 0px 10px;
+  }
+}
+@media (max-width:840px){
+  .data{
+    display: none;
+  }
+}
+.finish {
+  height: 110%;
+  width: 100vw;
+  background-color: #fcfce8;
+}
+.end {
+  display: flex;
+  justify-content: center;
+}
+.end a img {
+  height: 45px;
+  width: 45px;
+  padding: 25px;
+  padding-top: 35px;
+  transition: 0.3s ease;
+}
+.end a img:hover{
+  opacity: 0.5;
+}
+.copy {
+  display: flex;
+  justify-content: center;
+}

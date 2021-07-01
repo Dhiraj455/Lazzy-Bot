@@ -1,0 +1,11 @@
+@media (min-width:895px){
+    .menu{
+        display: none;
+    }
+    #bars{
+        display: none;
+    }
+    #times{
+        display: none;
+    }
+}

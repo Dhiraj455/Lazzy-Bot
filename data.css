@@ -1,0 +1,175 @@
+body{
+    background-image: linear-gradient(#ebf05b,#f4fabe);
+}
+.card{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.datapack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bor{
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    padding: 30px;
+    border-bottom: 1px solid #1b1b1b;
+    border-top: 1px solid #1b1b1b;
+}
+h1 {
+    font-family: "Luckiest Guy";
+    color: #2d90fa;
+    font-size: 50px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  p {
+    font-family: "PT Serif", serif;
+    color: #5f6973;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 0px;
+  }
+  h4{
+      font-size: 15px;
+      font-weight: bold;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+  }
+  h3{
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  .button{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .button button{
+    color: #fff;
+    background-color: #32373c;
+    border: none;
+    border-radius: 1.55em;
+    box-shadow: none;
+    cursor: pointer;
+    align-items: center;
+    display: inline-block;
+    font-size: 1.125em;
+    padding: .667em 1.333em;
+    text-align: center;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  .button button a{
+      color: #fff;
+      text-decoration: none;
+  }
+  .grid{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+  }
+  .all-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 150px;
+      background-image: linear-gradient(#f4fabe,#fcfce8);
+      border-radius: 10px;
+      margin: 20px;
+  }
+  .items{
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+  }
+  .top{
+    padding-top: 20px;
+  }
+  .do{
+      display: flex;
+      align-items: center;
+      margin: 30px;
+      justify-content: space-around;
+  }
+  .do img{
+      width: 400px;
+      height: 400px;
+  }
+.turn{
+    transform: rotateY(180deg);
+  }
+  .button button:hover{
+      text-decoration: underline;
+  }
+  .back{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .back button{
+    color: #fff;
+    background-color: #32373c;
+    border: none;
+    border-radius: 1.55em;
+    box-shadow: none;
+    cursor: pointer;
+    align-items: center;
+    display: inline-block;
+    font-size: 1.125em;
+    padding: .667em 1.333em;
+    text-align: center;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    margin: 20px;
+  }
+  .back button a{
+    color: #fff;
+    text-decoration: none;
+}
+.back button:hover{
+    text-decoration: underline;
+}
+  .finish {
+    height: 110%;
+    width: 100vw;
+    border-top: 1px solid #1b1b1b;
+  }
+  .end {
+    display: flex;
+    justify-content: center;
+  }
+  .end a img {
+    height: 45px;
+    width: 45px;
+    padding: 25px;
+    padding-top: 35px;
+    transition: 0.3s ease;
+  }
+  .end a img:hover{
+    opacity: 0.5;
+  }
+  .copy {
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width:900) {
+    .none{
+      display: none;
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+    }
+  }
