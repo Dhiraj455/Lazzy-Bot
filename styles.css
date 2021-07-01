@@ -136,9 +136,19 @@ p {
   margin-bottom: 10px;
   border: 0.5px solid #1b1b1b;
 }
+@media (max-width:450px) {
+  .card{
+    margin-left: 17%;
+  }
+}
 @media (max-width:400px) {
   .card{
     margin-left: 10%;
+  }
+}
+@media (max-width:340px) {
+  .card{
+    margin-left: 5%;
   }
 }
 .card:hover{
